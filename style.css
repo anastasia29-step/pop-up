@@ -3,6 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+.white{
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: brightness(50%);
+}
 h1{
     font-size: 60px;
 }
@@ -12,16 +20,30 @@ h1{
     height: 80px;
     align-items: center;
     margin-left: 30px;
+    position: fixed;
+    top: 20px;
+    left: 10px;
 }
 .fa-arrow-pointer{
     font-size: 40px;
     position: absolute;
     z-index: 99999;
     display: flex;
+    cursor: pointer;
 }
 input{
     position: relative;
     display: none;
 }
-
+.white .pop{
+    margin: auto;
+}
+.pop{
+    width: 700px;
+    height: 320px;
+    background-color: white;
+    position: absolute;
+    z-index: 9999999;
+    border-radius: 17px;
+}
 
