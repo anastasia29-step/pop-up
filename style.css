@@ -15,4 +15,13 @@ h1{
 }
 .fa-arrow-pointer{
     font-size: 40px;
+    position: absolute;
+    z-index: 99999;
+    display: flex;
 }
+input{
+    position: relative;
+    display: none;
+}
+
+
