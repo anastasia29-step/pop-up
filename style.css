@@ -1,4 +1,4 @@
-*{
+/* *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -30,13 +30,21 @@ h1{
     z-index: 99999;
     display: flex;
     cursor: pointer;
-}
-input{
-    position: relative;
     display: none;
 }
-.white .pop{
-    margin: auto;
+header {
+    position: relative;
+}
+header input{
+    position: absolute;
+    right: -35px;
+    transform: scale(3);
+    top: 20px;
+    opacity: 0;
+    cursor: pointer;
+}
+header input:checked + .pop{
+    display: flex;
 }
 .pop{
     width: 700px;
@@ -45,6 +53,8 @@ input{
     position: absolute;
     z-index: 9999999;
     border-radius: 17px;
+    transition: 0.4s;
+    display: none;
 }
 .pop p{
     font-size: 35px;
@@ -60,5 +70,67 @@ input{
     height: 50px;
     border: 2px solid grey;
     font-size: 40px;
+} */
+/* body {
+    font-family: Georgia, serif;
+    color: black;
+    height: 100vh;
+    justify-content: center;
+    padding-top: 40px;
+    backdrop-filter: brightness(50%);
+    display: flex;
+} */
+.mtavari{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 700;
 }
+.open-btn {
+    font-size: 36px;
+    cursor: pointer;
+    display: flex;
+}
+#overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+#popup-toggle:checked + .open-btn + #overlay {
+    display: flex;
+}
+.popup {
+    position: relative;
+    width: 550px;
+    background: white;
+    padding: 60px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 25px 40px rgba(0,0,0,0.4);
+    text-align: center;
+    font-size: 28px;
+}
+.close-btn {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    width: 55px;
+    height: 55px;
+    background: white;
+    border-radius: 50%;
+    border: 3px solid #777;
+    font-size: 40px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 
